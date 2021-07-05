@@ -1,0 +1,910 @@
+@font-face{
+	font-family: Muller;
+	src: url('fonts/MullerRegular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: Muller;
+	src: url('fonts/MullerRegularItalic.otf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: Muller;
+	src: url('fonts/MullerLight.otf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: Muller;
+	src: url('fonts/MullerLightItalic.otf');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: Muller;
+	src: url('fonts/MullerMedium.otf');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: Muller;
+	src: url('fonts/MullerMediumItalic.otf');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: Muller;
+	src: url('fonts/MullerBold.otf');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: Muller;
+	src: url('fonts/MullerBoldItalic.otf');
+	font-weight: 700;
+	font-style: italic;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+	font-family: Muller;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.container{
+	max-width: 1660px;
+	padding: 0 15px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+ul{
+	list-style: none;
+}
+
+.db-2{
+	display: none;
+}
+
+/*----------------header---------------*/
+
+
+.header{
+	background-color: #000;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+	position: relative;
+	z-index: 1;
+}
+
+.header__info{
+	color: #fff;
+	text-align: right;
+}
+
+.header__info-num{
+	margin-bottom: 30px;
+	font-style: italic;
+}
+
+.header__info-num a{
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 50px;
+	text-decoration: none;
+	color: #F8961D;
+	margin-left: 20px;
+}
+
+.header__info-pl{
+	font-weight: 500;
+	line-height: 42px;
+}
+
+
+/*----------------------show---------------------------*/
+
+
+.show{
+	background-color: #000;
+}
+
+.show__inner{
+	padding-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+.show__content{
+	width: 680px;
+}
+
+.show__title{
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 72px;
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.show__title span{
+	font-style: italic;
+	color: #F8961D;
+}
+
+.show__text{
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 55px;
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.btn{
+	display: inline-block;
+	cursor: pointer;	
+	position: relative;
+	width: 390px;
+	height: 70px;
+}
+
+.btn button{
+	background-image: linear-gradient(to right, #FFE253, #E67610);
+	border: none;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 5px 0px #6A3500;
+	border-radius: 5px;
+	transform: skewX(20deg);
+}
+
+.btn span{
+	position: absolute;
+	font-weight: 700;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 24px 99px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.show__images{
+	position: relative;
+}
+
+.circle__time{
+	position: absolute;
+	left: 50px;
+	top: -50px;
+	z-index: 2;
+}
+
+.circle__price{
+	position: absolute;
+	bottom: 120px;
+	z-index: 5;
+	left: -150px;
+}
+
+.show__cooker{
+	z-index: 2;
+	position: relative;
+	top: 60px;
+	right: 50px;
+}
+
+.show__barbecue{
+	position: absolute;
+	right: 0;
+	top: 0;
+}	
+
+
+/*------------------------about---------------------*/
+
+
+.about{
+	position: relative;
+	z-index: 10;
+	background-color: #fff;
+}
+
+.about::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 175px;
+	transform: skewY(-5deg);
+	z-index: 5;
+	top: -85px;
+	background-color: #fff;
+}
+
+.about::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 175px;
+	transform: skewY(-5deg);
+	z-index: 5;
+	bottom: -85px;
+	background-color: #fff;
+}
+
+.about__inner{
+	display: flex;
+	position: relative;
+	z-index: 10;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.about__content{
+	color: #151515;
+	text-align: right;
+}
+
+.about__title{
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 48px;
+	margin-bottom: 50px;
+}
+
+.about__text{
+	font-weight: 300;
+	line-height: 63px;
+}
+
+
+/*---------------------register-----------------*/
+
+
+.register{
+	background-image: url('img/form.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.register__inner{
+	padding-top: 330px;
+	padding-bottom: 270px;
+}
+
+.form{
+	margin: 0 auto;
+	width: 562px;
+}
+
+.form__title{
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 48px;
+	color: #fff;
+}
+
+.form__input{
+	border: none;
+	font-family: Muller;
+	display: block;
+	border-bottom: 1px solid #fff;
+	margin-top: 40px;
+	width: 100%;
+	background-color: transparent;
+	color: #fff;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 24px;
+	padding: 7px 20px;
+	outline: none;
+}
+
+.form__input::placeholder{
+	color: #fff;
+	font-family: Muller;
+}
+
+.form__btn{
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+
+/*----------------------footer--------------------*/
+
+
+.footer__inner{
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__list{
+	display: flex;
+	align-items: center;
+}
+
+.footer__list ul{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.footer__item{
+	margin-right: 50px;
+}
+
+.footer__item a{
+	color: #151515;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 34px;
+	text-decoration: none;
+}
+
+.footer__item:last-child{
+	margin-right: 0;
+}
+
+.footer__info{
+	color: #151515;
+	text-align: right;
+}
+
+.footer__info-num{
+	font-style: italic;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.footer__info-num a{
+	font-weight: 500;
+	font-size: 24px;
+	color: #F8961D;
+	line-height: 34px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.footer__info-pl{
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 34px;
+}
+
+
+/*---------------medias----------------*/
+
+@media (max-width: 1570px){
+	.show__cooker{
+		right: 100px;
+	}
+}
+
+@media (max-width: 1440px){
+	.show__inner{
+		height: 1150px;
+		padding-bottom: 0;
+	}
+	.show__cooker{
+		top: 300px;
+		right: 400px;
+	}
+	.show__barbecue{
+		top: 275px;
+	}
+	.circle__price{
+		left: -400px;
+		bottom: 150px;
+	}
+}
+
+@media (max-width: 1330px){
+	.header__inner{
+		display: block;
+		padding-bottom: 30px
+	}
+	.header__logo{
+		text-align: center;
+		margin-bottom: 50px
+	}
+	.header__info{
+		text-align: center;
+	}
+	.show__inner{
+		height: 1350px;
+	}
+	.show__cooker{
+		top: 550px;
+		right: 725px
+	}
+	.show__barbecue{
+		top: 800px;
+	}
+	.circle__price{
+		left: 0;
+		bottom: 750px;
+	}
+	.circle__time{
+		top: 0;
+		left: 150px;
+	}
+	.about__inner{
+		flex-direction: column;
+	}
+	.about__img{
+		order: 2;
+		margin: 0 auto
+	}
+	.about__content{
+		text-align: center
+	}
+	.footer__inner{
+		flex-direction: column;
+		align-items: center
+	}
+	.footer__logo{
+		margin-bottom: 20px;
+	}
+	.footer__list{
+		margin-bottom: 30px
+	}
+	.footer__info{
+		text-align: center
+	}
+}
+
+@media (max-width: 1050px){
+	.header__logo{
+		margin-bottom: 0
+	}
+	.show__inner{
+		height: 1750px;
+		display: block
+	}
+	.show__content{
+		text-align: center
+	}
+	.show__title{
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.show__text{
+		font-size: 28px;
+		line-height: 40px
+	}
+	.show__cooker{
+		top: 610px;
+		left: -175px;
+	}
+	.show__barbecue{
+		top: 1070px;
+		right: 0;
+	}
+	.circle__price{
+		left: 0;
+		bottom: 400px;
+	}
+	.circle__time{
+		top: 115px;
+		left: auto;
+		right: 50px
+	}
+	.show__content{
+		width: 100%
+	}
+	.db-1{
+		display: none;
+	}
+	.db-2{
+		display: block;
+		position: absolute;
+		width: 100%;
+		left: 50%;
+		top: 420px;
+		transform: translateX(-50%);
+	}
+	.btn{
+		width: 320px;
+		height: 60px;
+	}
+	.btn span{
+		padding: 15px 60px;
+		font-size: 24px
+	}
+	.form__btn span{
+		padding: 15px 80px
+	}
+	.about__title{
+		font-size: 40px;
+		line-height: 40px
+	}
+	.about__text{
+		font-size: 24px;
+		line-height: 55px;
+	}
+}
+
+@media (max-width:  910px){
+	.show__cooker{
+		width: 95%;
+		top: 740px
+	}
+	.show__barbecue{
+		top: 1180px;
+		height: 90%
+	}
+	.circle__price{
+		bottom: auto;
+		top: 90px
+	}
+}
+
+@media (max-width: 856px){
+	.about__img img{
+		max-width: 100%
+	}
+}
+
+@media (max-width: 768px){
+	.header__info-num{
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.header__info-num a{
+		font-size: 28px;
+		line-height: 40px;
+	}
+	.header__info-pl{
+		font-size: 24px;
+		line-height: 30px
+	}
+	.show__title{
+		font-size: 45px;
+		line-height: 45px
+	}
+	.show__text{
+		font-size: 22px;
+		line-height: 30px
+	}
+	.show__inner{
+		height: 1650px;
+	}
+	.show__cooker{
+		top: 780px;
+		left: -100px
+	}
+	.show__barbecue{
+		top: 1080px;
+		height: 90%
+	}
+	.btn{
+		width: 290px;
+	}
+	.form__btn span{
+		padding: 15px 68px
+	}
+	.register__inner{
+		padding-top: 250px;
+		padding-bottom: 200px
+	}
+}
+
+@media (max-width: 660px){
+	.footer__list ul{
+		flex-direction: column;
+		text-align: center
+	}
+	.footer__item{
+		margin-right: 0
+	}
+}
+
+@media (max-width: 640px){
+	.show__inner{
+		height: 1550px;
+	}
+	.show__cooker{
+		top: 730px
+	}
+	.circle__price{
+		width: 40%
+	}
+	.circle__time{
+		width: 30%
+	}
+	.db-2{
+		top: 380px
+	}
+	.about__text{
+		font-size: 20px;
+		line-height: 45px
+	}
+	.form{
+		width: auto;
+	}
+	.form__title{
+		font-size: 38px;
+		text-align: center
+	}
+	.register__inner{
+		padding-top: 200px;
+		padding-bottom: 120px
+	}
+}
+
+@media (max-width: 570px){
+	.show__title{
+		font-size: 40px;
+		line-height: 40px
+	}
+	.header__info-num{
+		font-size: 20px;
+		line-height: 20px
+	}
+	.header__info-num a{
+		font-size: 24px;
+		line-height: 35px
+	}
+	.header__info-pl{
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.btn span{
+		font-size: 20px
+	}
+	.show__inner{
+		height: 1450px;
+	}
+	.show__barbecue{
+		height: 60%;
+	}
+	.show__cooker{
+		top: 660px
+	}
+	.about__title{
+		font-size: 30px;
+		line-height: 30px
+	}
+	.form__btn span{
+		padding: 15px 80px
+	}
+	.form__title{
+		font-size: 30px
+	}
+	.form__input{
+		font-size: 20px
+	}
+}
+
+@media (max-width: 510px){
+	.header__inner{
+		padding-bottom: 0
+	}
+	.show__inner{
+		padding-top: 50px;
+		height: 1350px
+	}
+	.show__cooker{
+		top: 600px;
+		left: -75px
+	}
+	.show__barbecue{
+		top: 990px
+	}
+	.footer__item{
+		margin-bottom: 15px;
+	}
+	.footer__item a{
+		font-size: 20px
+	}
+	.footer__info-num{
+		margin-bottom: 10px
+	}
+}
+
+@media (max-width: 440px){
+	.about::before{
+		top: -40px
+	}
+	.about::after{
+		bottom: -40px
+	}
+	.show__title{
+		font-size: 35px;
+		line-height: 35px;
+		margin-bottom: 40px
+	}
+	.show__text{
+		font-size: 20px;
+		margin-bottom: 40px
+	}
+	.circle__time{
+		right: 25px
+	}
+	.db-2{
+		top: 300px
+	}
+	.header__info-num{
+		margin-bottom: 10px;
+		font-size: 16px
+	}
+	.header__info-num a{
+		font-size: 20px;
+		margin-left: 5px
+	}
+	.header__info-pl{
+		font-size: 16px
+	}
+	.show__inner{
+		height: 1150px
+	}
+	.show__cooker{
+		top: 550px
+	}
+	.show__barbecue{
+		top: 840px
+	}
+	.about__title{
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 30px
+	}
+	.about__text{
+		font-size: 16px;
+		line-height: 30px
+	}
+	.btn{
+		width: 210px;
+		height: 40px
+	}
+	.btn span{
+		font-size: 16px;
+		padding: 7px 50px
+	}
+	.register__inner{
+		padding-top: 140px;
+		padding-bottom: 80px
+	}
+	.form__title{
+		font-size: 24px;
+    line-height: 24px;
+	}
+	.form__input{
+		font-size: 16px;
+		padding: 7px 10px
+	}
+	.footer__inner{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.footer__list{
+		margin-bottom: 50px
+	}
+	.footer__item a{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.footer__info-num{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.footer__info-num a{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.footer__info-pl{
+		font-size: 16px;
+		line-height: 22px
+	}
+}
+
+@media (max-width: 360px){
+	.show__inner{
+		height: 950px
+	}
+	.show__title{
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 30px
+	}
+	.show__text{
+		font-size: 18px;
+		line-height: 27px;
+		margin-bottom: 30px
+	}
+	.circle__price{
+		top: 40px
+	}
+	.circle__time{
+		top: 60px
+	}
+	.header__info-num{
+		font-size: 14px;
+		line-height: 14px
+	}
+	.header__info-num a{
+		font-size: 16px;
+		line-height: 22px
+	}
+	.header__info-pl{
+		font-size: 14px;
+		line-height: 20px
+	}
+	.db-2{
+		top: 230px
+	}
+	.show__cooker{
+		top: 430px;
+		left: -50px
+	}
+	.show__barbecue{
+		top: 730px;
+		height: 40%
+	}
+	.about__content{
+		margin-bottom: 30px
+	}
+	.about__title{
+		font-size: 18px;
+		line-height: 18px;
+		margin-bottom: 20px
+	}
+	.about__text{
+		font-size: 12px;
+		line-height: 25px
+	}
+	.register{
+		background-position: left
+	}
+	.form__title{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.form__input{
+		margin-top: 30px;
+		font-size: 12px;
+		line-height: 12px
+	}
+	.footer__info-num{
+		font-size: 14px;
+		line-height: 14px
+	}
+	.footer__info-num a{
+		font-size: 16px;
+		line-height: 22px
+	}
+	.footer__info-pl{
+		font-size: 14px;
+		line-height: 20px
+	}
+}
